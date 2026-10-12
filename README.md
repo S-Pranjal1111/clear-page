@@ -6,7 +6,7 @@ Live site: https://clearpage.online
 
 ## About this site
 
-A simple static website with no build step and no dependencies. It is hosted on GitHub Pages, and checkout and payments are handled by [Creem](https://www.creem.io).
+A simple static website with no build step and no dependencies. It is hosted on GitHub and checkout and payments are handled by [Creem](https://www.creem.io).
 
 ## Files
 
