@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Elder Care Command Binder | Printable caregiver organizer</title>
+<meta name="description" content="A 31-page printable organizer for medications, appointments, contacts, legal papers and daily care. Instant PDF in A4 or US Letter.">
+<meta name="theme-color" content="#1e3a4f">
+<meta property="og:type" content="website">
+<meta property="og:title" content="The Elder Care Command Binder">
+<meta property="og:description" content="Everything about their care, in one printable binder. 31 pages, A4 and US Letter.">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231e3a4f'/%3E%3Ccircle cx='38' cy='26' r='16' fill='%232f8186'/%3E%3Crect x='12' y='44' width='24' height='5' rx='2.5' fill='%23e0a24a'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --ink:#1e3a4f;
+  --ink-deep:#162c3c;
+  --teal:#2f8186;
+  --teal-deep:#276b70;
+  --teal-soft:#e3f0f0;
+  --teal-glow:#8fd3d2;
+  --amber:#e0a24a;
+  --amber-hover:#ebb560;
+  --mist:#f0f5f6;
+  --text:#22333f;
+  --muted:#586976;
+  --line:#d6e0e3;
+  --serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --sans:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --header-h:68px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--sans);font-size:1.0625rem;line-height:1.65;color:var(--text);background:#fff;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+h1,h2,h3,p,ul,ol{margin:0}
+ul,ol{padding:0;list-style:none}
+button{font:inherit;color:inherit}
+[hidden]{display:none!important}
+section[id]{scroll-margin-top:var(--header-h)}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+
+.wrap{width:min(1160px,100% - 48px);margin-inline:auto}
+.sec{padding:clamp(72px,9vw,128px) 0}
+.sec-mist{background:var(--mist)}
+.sec-dark{background:var(--ink-deep);color:#fff}
+
+h1,h2,h3{font-family:var(--serif);font-weight:600;letter-spacing:-.02em;line-height:1.1;font-optical-sizing:auto}
+h2{font-size:clamp(2rem,3.8vw,3.1rem)}
+h3{font-size:1.35rem;line-height:1.25}
+.lede{color:var(--muted);max-width:56ch;margin-top:18px}
+.sec-dark .lede{color:#b9cbd6}
+.sec-head{margin-bottom:clamp(36px,5vw,56px)}
+
+.icon{width:1.25em;height:1.25em;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 30px;border-radius:999px;border:0;background:var(--amber);color:var(--ink-deep);font-weight:600;font-size:1rem;text-decoration:none;cursor:pointer;transition:background .2s,transform .2s,box-shadow .2s;box-shadow:0 10px 24px -12px rgba(224,162,74,.8)}
+.btn:hover{background:var(--amber-hover);transform:translateY(-2px)}
+.btn-sm{min-height:42px;padding:0 22px;font-size:.9rem;box-shadow:none}
+.link{color:#fff;font-weight:500;text-decoration:underline;text-decoration-color:rgba(255,255,255,.4);text-underline-offset:6px;transition:text-decoration-color .2s}
+.link:hover{text-decoration-color:var(--amber)}
+
+/* Header */
+.site-header{position:sticky;top:0;z-index:50;height:var(--header-h);background:rgba(22,44,60,.88);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08)}
+.site-header .wrap{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;text-decoration:none;font-weight:500;font-size:.98rem}
+.brand svg{width:34px;height:34px}
+.nav{display:flex;align-items:center;gap:32px}
+.nav-links{display:flex;gap:28px}
+.nav-links a{color:#c9d8e0;text-decoration:none;font-size:.92rem;transition:color .2s}
+.nav-links a:hover{color:#fff}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;background:var(--ink);color:#fff;padding:clamp(48px,7vw,96px) 0 clamp(72px,9vw,120px)}
+.hero::before,.hero::after{content:"";position:absolute;border-radius:50%}
+.hero::before{width:min(80vw,780px);aspect-ratio:1;right:-16vw;top:-24%;background:var(--teal)}
+.hero::after{width:min(54vw,520px);aspect-ratio:1;right:-5vw;top:-7%;background:var(--teal-deep)}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(32px,5vw,72px);align-items:center}
+.hero h1{font-size:clamp(2.7rem,5.6vw,4.7rem);font-weight:600}
+.hero .lede{color:#cfdce4;font-size:1.15rem;max-width:46ch;margin-top:24px}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:20px 32px;margin-top:36px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;margin-top:40px;font-size:.92rem;color:#b9cbd6}
+.facts li{display:flex;align-items:center;gap:10px}
+.facts .icon{color:var(--teal-glow);width:1.1em;height:1.1em}
+
+.fan{--mx:0;--my:0;position:relative;width:100%;max-width:560px;margin-inline:auto;aspect-ratio:1/1.02}
+.layer{position:absolute;transition:transform .5s cubic-bezier(.2,.7,.2,1);transform:translate3d(calc(var(--mx)*var(--d)*1px),calc(var(--my)*var(--d)*1px),0)}
+.layer img{width:100%;height:auto;border-radius:3px;box-shadow:0 34px 60px -22px rgba(0,0,0,.6),0 0 0 1px rgba(255,255,255,.1)}
+.sheet{--r:0deg;transform:rotate(var(--r));animation:deal 1s cubic-bezier(.2,.8,.2,1) both;animation-delay:var(--delay)}
+@keyframes deal{from{opacity:0;transform:translate(var(--fx),56px) rotate(0deg) scale(.94)}}
+.layer-left{--d:10;left:0;top:17%;width:46%;z-index:1}
+.layer-left .sheet{--r:-8deg;--fx:48%;--delay:.35s}
+.layer-right{--d:18;right:0;top:11%;width:46%;z-index:2}
+.layer-right .sheet{--r:7deg;--fx:-48%;--delay:.5s}
+.layer-center{--d:30;left:23%;top:2%;width:54%;z-index:3}
+.layer-center .sheet{--delay:.1s;--fx:0%}
+
+/* Look inside */
+.viewer{display:grid;grid-template-columns:272px minmax(0,1fr);gap:clamp(28px,4vw,56px);align-items:start}
+.chapters{display:flex;flex-direction:column;border-left:2px solid var(--line)}
+.chapter{display:block;width:100%;text-align:left;background:none;border:0;border-left:3px solid transparent;margin-left:-2px;padding:12px 16px;cursor:pointer;transition:background .2s,border-color .2s}
+.chapter:hover{background:var(--mist)}
+.chapter[aria-current="true"]{border-left-color:var(--teal);background:var(--teal-soft)}
+.chapter b{display:block;font-weight:500;font-size:.98rem;line-height:1.35}
+.chapter small{display:block;color:var(--muted);font-size:.8rem}
+.stage{--sh:clamp(380px,56vw,640px);position:relative;display:grid;place-items:center;height:var(--sh);padding:24px;background:var(--mist);border-radius:20px;outline-offset:4px}
+.paper img{width:auto;height:auto;max-width:100%;max-height:calc(var(--sh) - 48px);background:#fff;border-radius:3px;box-shadow:0 24px 50px -22px rgba(22,44,60,.45),0 2px 6px rgba(22,44,60,.12);transition:opacity .18s ease}
+.paper img.swap{opacity:0}
+.caption{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;margin-top:24px}
+.caption h3{font-size:1.4rem}
+.caption h3 span{display:block;font-family:var(--sans);font-weight:400;font-size:.85rem;letter-spacing:0;color:var(--teal);margin-bottom:4px}
+.caption p{color:var(--muted);margin-top:8px;max-width:52ch;font-size:1rem}
+.ctrl{display:flex;gap:10px;flex:none}
+.ctrl button{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--line);background:#fff;display:grid;place-items:center;cursor:pointer;color:var(--ink);transition:background .2s,border-color .2s,color .2s}
+.ctrl button:hover{background:var(--ink);border-color:var(--ink);color:#fff}
+.thumbs{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}
+.thumb{padding:0;border:0;background:none;cursor:pointer;border-radius:4px;opacity:.6;transition:opacity .2s,box-shadow .2s}
+.thumb:hover{opacity:1}
+.thumb[aria-current="true"]{opacity:1;box-shadow:0 0 0 3px var(--teal)}
+.thumb img{height:76px;width:auto;border-radius:3px;border:1px solid var(--line);background:#fff}
+.viewer-note{margin-top:40px;font-size:.9rem;color:var(--muted)}
+
+/* Why paper */
+.why{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px);align-items:start}
+.why h2{position:sticky;top:calc(var(--header-h) + 32px)}
+.why-list li{display:grid;grid-template-columns:56px 1fr;gap:24px;padding:32px 0;border-top:1px solid var(--line)}
+.why-list li:first-child{padding-top:0;border-top:0}
+.why-list li:last-child{padding-bottom:0}
+.why-icon{width:56px;height:56px;border-radius:50%;background:var(--teal-soft);color:var(--teal);display:grid;place-items:center}
+.why-icon .icon{width:26px;height:26px}
+.why-list p{color:var(--muted);margin-top:10px;max-width:54ch}
+
+/* Setup steps */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:36px}
+.steps li{position:relative}
+.steps li:not(:last-child)::after{content:"";position:absolute;left:64px;right:-24px;top:23px;height:2px;background:var(--line)}
+.step-n{position:relative;z-index:1;width:48px;height:48px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-family:var(--serif);font-weight:600;font-size:1.2rem}
+.steps h3{font-size:1.2rem;margin-top:24px}
+.steps p{color:var(--muted);margin-top:10px;font-size:1rem}
+
+/* Buy */
+.buy{position:relative;overflow:hidden}
+.buy::before{content:"";position:absolute;width:560px;aspect-ratio:1;border-radius:50%;left:-260px;bottom:-300px;background:var(--teal);opacity:.22}
+.buy-grid{position:relative;display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(40px,6vw,88px);align-items:start}
+.included{margin-top:36px;display:grid;gap:14px}
+.included li{display:flex;gap:14px;color:#dbe6ec;font-size:1rem;line-height:1.5}
+.included .icon{color:var(--teal-glow);margin-top:3px}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.card{display:flex;flex-direction:column;background:#fff;color:var(--text);border-radius:22px;padding:30px 28px 28px}
+.card-cover{display:flex;align-items:flex-end;justify-content:center;height:268px;margin-bottom:26px}
+.card-cover img{width:168px;height:auto;border-radius:3px;box-shadow:0 22px 40px -18px rgba(22,44,60,.6),0 0 0 1px rgba(22,44,60,.08)}
+.card h3{font-size:1.5rem}
+.card .size{font-weight:500;color:var(--teal);font-size:.95rem;margin-top:6px}
+.card .for{color:var(--muted);font-size:.95rem;margin-top:12px;flex:1}
+.price{font-family:var(--serif);font-weight:600;font-size:2.1rem;letter-spacing:-.02em;color:var(--ink);margin-top:22px;line-height:1}
+.card .btn{margin-top:22px;width:100%}
+.checkout-note{margin-top:28px;text-align:center;font-size:.9rem;color:#b9cbd6}
+
+/* FAQ */
+.faq{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px);align-items:start}
+.faq-list{border-bottom:1px solid var(--line)}
+.faq details{border-top:1px solid var(--line)}
+.faq summary{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:24px 0;cursor:pointer;list-style:none;font-weight:500;font-size:1.08rem;line-height:1.4}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary .icon{color:var(--teal);transition:transform .25s}
+.faq details[open] summary .icon{transform:rotate(45deg)}
+.faq details p{padding:0 48px 26px 0;color:var(--muted)}
+
+/* Footer */
+.site-footer{background:var(--ink-deep);color:#9fb4c1;padding:56px 0;font-size:.88rem;line-height:1.7}
+.footer-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px)}
+.site-footer .brand{margin-bottom:14px}
+.site-footer p+p{margin-top:12px}
+
+/* Responsive */
+@media (max-width:960px){
+  .nav-links{display:none}
+  .hero-grid,.why,.faq,.buy-grid,.footer-grid{grid-template-columns:1fr}
+  .hero::before{right:-34vw;top:-8%}
+  .hero::after{right:-18vw;top:6%}
+  .why h2{position:static}
+  .steps{grid-template-columns:1fr 1fr;gap:44px 32px}
+  .steps li::after{display:none}
+  .viewer{grid-template-columns:1fr}
+  .chapters{flex-direction:row;overflow-x:auto;border-left:0;gap:8px;padding-bottom:6px;scrollbar-width:thin}
+  .chapter{width:auto;flex:none;border:1.5px solid var(--line);border-radius:999px;margin:0;padding:9px 18px;white-space:nowrap}
+  .chapter small{display:none}
+  .chapter[aria-current="true"]{border-color:var(--teal)}
+}
+@media (max-width:560px){
+  body{font-size:1rem}
+  .wrap{width:min(1160px,100% - 40px)}
+  .brand span{display:none}
+  .steps{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  .caption{flex-direction:column}
+  .why-list li{grid-template-columns:44px 1fr;gap:18px}
+  .why-icon{width:44px;height:44px}
+  .why-icon .icon{width:22px;height:22px}
+  .faq details p{padding-right:0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .sheet{animation:none}
+  .layer,.paper img,.btn,.faq summary .icon{transition:none}
+}
+</style>
+</head>
+
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-prev" viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></symbol>
+  <symbol id="i-next" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-fridge" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2"/><path d="M6 10.5h12M9.5 6v1.5M9.5 13.5V16"/></symbol>
+  <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 3v4M15 3v4M6.5 7h11v3.5a5.5 5.5 0 0 1-11 0V7zM12 16v5"/><path d="M3 3l18 18" /></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="5" y="10.5" width="14" height="10" rx="2"/><path d="M8 10.5V8a4 4 0 0 1 8 0v2.5M12 15v2"/></symbol>
+</svg>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Caregiver Printables, back to top">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#2f8186"/><circle cx="38" cy="26" r="16" fill="#1e3a4f"/><rect x="12" y="44" width="24" height="5" rx="2.5" fill="#e0a24a"/></svg>
+      <span>Caregiver Printables</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <div class="nav-links">
+        <a href="#inside">Look inside</a>
+        <a href="#setup">How it works</a>
+        <a href="#faq">Questions</a>
+      </div>
+      <a class="btn btn-sm" href="#buy">Get the binder</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Everything about their care, in one binder.</h1>
+        <p class="lede">The Elder Care Command Binder is a 31-page printable organizer for medications, appointments, contacts, legal papers and the family sharing the load.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#buy">Get the binder</a>
+          <a class="link" href="#inside">Look inside</a>
+        </div>
+        <ul class="facts">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Instant PDF download</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>A4 or US Letter</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Print as many copies as you need</li>
+        </ul>
+      </div>
+
+      <div class="fan" id="fan">
+        <div class="layer layer-left"><div class="sheet"><img src="assets/pages/p03.webp" width="1075" height="1521" alt="Emergency information page with a red header, for the fridge"></div></div>
+        <div class="layer layer-right"><div class="sheet"><img src="assets/pages/p18.webp" width="1075" height="1521" alt="Appointment prep sheet"></div></div>
+        <div class="layer layer-center"><div class="sheet"><img src="assets/pages/p01.webp" width="1075" height="1521" alt="Cover of The Elder Care Command Binder" fetchpriority="high"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Look inside -->
+  <section class="sec" id="inside">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Look inside the binder</h2>
+        <p class="lede">These are the real pages, shown in A4. Choose a chapter, then click through.</p>
+      </div>
+
+      <div class="viewer">
+        <nav class="chapters" id="chapters" aria-label="Binder chapters"></nav>
+        <div>
+          <div class="stage" id="stage" tabindex="0" aria-label="Page preview. Use the left and right arrow keys to change page.">
+            <div class="paper"><img id="stageImg" src="assets/pages/p01.webp" width="1075" height="1521" alt="Cover of The Elder Care Command Binder"></div>
+          </div>
+          <div class="caption">
+            <div aria-live="polite">
+              <h3 id="capTitle"><span id="capPage">Page 1</span>Cover</h3>
+              <p id="capDesc"></p>
+            </div>
+            <div class="ctrl">
+              <button type="button" id="prev" aria-label="Previous page"><svg class="icon" aria-hidden="true"><use href="#i-prev"/></svg></button>
+              <button type="button" id="next" aria-label="Next page"><svg class="icon" aria-hidden="true"><use href="#i-next"/></svg></button>
+            </div>
+          </div>
+          <div class="thumbs" id="thumbs"></div>
+        </div>
+      </div>
+      <p class="viewer-note">Showing 26 of 31 pages. The rest are the second copies of the prep sheet and health log, two notes pages and the license page.</p>
+    </div>
+  </section>
+
+  <!-- Why paper -->
+  <section class="sec sec-mist">
+    <div class="wrap why">
+      <h2>Paper works when everything else doesn&rsquo;t.</h2>
+      <ul class="why-list">
+        <li>
+          <div class="why-icon"><svg class="icon" aria-hidden="true"><use href="#i-fridge"/></svg></div>
+          <div>
+            <h3>Hand it to a paramedic</h3>
+            <p>The Emergency Sheet puts conditions, allergies, medications, contacts and your wishes on one page. Keep a copy on the fridge and one in your bag.</p>
+          </div>
+        </li>
+        <li>
+          <div class="why-icon"><svg class="icon" aria-hidden="true"><use href="#i-plug"/></svg></div>
+          <div>
+            <h3>Nothing to log in to</h3>
+            <p>No app, no subscription, no battery. Print it once, then siblings, aides and neighbors can find what they need in seconds.</p>
+          </div>
+        </li>
+        <li>
+          <div class="why-icon"><svg class="icon" aria-hidden="true"><use href="#i-lock"/></svg></div>
+          <div>
+            <h3>Private by design</h3>
+            <p>The binder asks only for the last four digits of account numbers, and for where the full details are kept. A misplaced folder never exposes a password or a Social Security number.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Setup -->
+  <section class="sec" id="setup">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Set it up in five minutes</h2>
+        <p class="lede">A little structure now saves hours later.</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <div class="step-n">1</div>
+          <h3>Print it</h3>
+          <p>Use a home printer or a copy shop. Hole-punch the pages and file them in a 1.5-inch binder with tab dividers.</p>
+        </li>
+        <li>
+          <div class="step-n">2</div>
+          <h3>Fill in the Emergency Sheet</h3>
+          <p>Start with page 3. Make two copies: one for the fridge, one for your bag or car.</p>
+        </li>
+        <li>
+          <div class="step-n">3</div>
+          <h3>Add medications and the care team</h3>
+          <p>These are the pages you will open most. Write in pencil and update after every appointment.</p>
+        </li>
+        <li>
+          <div class="step-n">4</div>
+          <h3>Tell the family where it lives</h3>
+          <p>Use the roles and weekly coverage pages to split the work fairly, before anyone feels stretched.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Buy -->
+  <section class="sec sec-dark buy" id="buy">
+    <div class="wrap buy-grid">
+      <div>
+        <h2>Choose your paper size</h2>
+        <p class="lede">Both editions contain the same 31 pages. Only the page size differs, so pick the one your printer uses.</p>
+        <ul class="included">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>One PDF with 31 printable pages</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Emergency fridge sheet, medication list and refill schedule</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Checklists for legal documents, insurance, finances and home safety</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Appointment, health and incident logs, plus a hospital toolkit</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Permission to print extra copies for your own family</li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="cards">
+          <article class="card">
+            <div class="card-cover"><img src="assets/cover-a4.webp" width="1075" height="1521" loading="lazy" alt="A4 edition cover"></div>
+            <h3>A4 edition</h3>
+            <p class="size">210 &times; 297 mm</p>
+            <p class="for">Standard paper in Europe, Asia, Africa, Oceania and most countries outside North America.</p>
+            <p class="price" data-price="a4" hidden></p>
+            <a class="btn" href="#buy" data-buy="a4">Buy the A4 edition</a>
+          </article>
+          <article class="card">
+            <div class="card-cover"><img src="assets/cover-letter.webp" width="1105" height="1430" loading="lazy" alt="US Letter edition cover"></div>
+            <h3>US Letter edition</h3>
+            <p class="size">8.5 &times; 11 in</p>
+            <p class="for">Standard paper in the United States and Canada.</p>
+            <p class="price" data-price="letter" hidden></p>
+            <a class="btn" href="#buy" data-buy="letter">Buy the US Letter edition</a>
+          </article>
+        </div>
+        <p class="checkout-note">Secure checkout by Creem. You download your PDF after purchase.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq">
+    <div class="wrap faq">
+      <h2>Questions before you buy</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Which paper size should I choose?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <p>Choose the size your printer uses. A4 (210 &times; 297 mm) is standard across Europe, Asia, Africa and Oceania. US Letter (8.5 &times; 11 in) is standard in the United States and Canada. The content is identical.</p>
+        </details>
+        <details>
+          <summary>What exactly do I receive?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <p>One PDF of 31 pages in the size you choose. Print it at home or at a copy shop, and print extra copies of any page whenever you need them.</p>
+        </details>
+        <details>
+          <summary>Can I type into the PDF?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <p>It is designed to be filled in by hand, ideally in pencil so entries are easy to update. The pages are not fillable forms, but you can print a fresh copy of any page when one fills up.</p>
+        </details>
+        <details>
+          <summary>Does it work outside the United States?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <p>Nearly every page does: medications, contacts, appointments, daily care, home and family pages work anywhere. The insurance pages, the legal checklist and the Helpful Resources page mention US programs and helplines such as Medicare and the Eldercare Locator, and leave space for your own local numbers.</p>
+        </details>
+        <details>
+          <summary>Is it useful if my parent has dementia?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <p>It includes prompts for it: notes for emergency responders on memory and communication, a wandering and memory section in the home safety checklist, and a reminder to tell hospital staff about dementia and delirium risk. It is an organizer, not a care program.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="brand" href="#top">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#2f8186"/><circle cx="38" cy="26" r="16" fill="#1e3a4f"/><rect x="12" y="44" width="24" height="5" rx="2.5" fill="#e0a24a"/></svg>
+        <span>Caregiver Printables</span>
+      </a>
+      <p>&copy; 2026 Caregiver Printables</p>
+    </div>
+    <div>
+      <p>The binder is an organizational tool. It is not medical, legal, financial or insurance advice and does not replace professional guidance. Laws and benefits vary by location.</p>
+      <p>Personal, non-commercial use only. You may print as many copies as you need for your own family and caregiving. You may not resell, share or redistribute the file.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+/* ---------------------------------------------------------------
+   STORE SETTINGS: paste your Creem checkout links and prices here.
+   Leave a price empty ("") to hide it.
+---------------------------------------------------------------- */
+const STORE = {
+  a4:     { url: "", price: "" },
+  letter: { url: "", price: "" }
+};
+
+(function () {
+  "use strict";
+
+  /* Checkout links and prices */
+  document.querySelectorAll("[data-buy]").forEach(function (a) {
+    var cfg = STORE[a.dataset.buy];
+    if (cfg && cfg.url) { a.href = cfg.url; a.rel = "noopener"; }
+  });
+  document.querySelectorAll("[data-price]").forEach(function (el) {
+    var cfg = STORE[el.dataset.price];
+    if (cfg && cfg.price) { el.textContent = cfg.price; el.hidden = false; }
+  });
+
+  /* Page viewer */
+  var PAGES = {
+    1:  ["Cover", "Name the binder&rsquo;s owner and the person you care for. This is the front of the binder."],
+    2:  ["How to use this binder", "Five setup steps and a contents list, so anyone can find a page quickly."],
+    3:  ["Emergency information", "One page for the fridge and one for your bag, with everything paramedics and ER staff ask first."],
+    4:  ["Personal information", "Identity, family and the background that helps a new caregiver know the person, not just the patient."],
+    5:  ["Medical snapshot", "Conditions, allergies, surgeries and vaccinations, ready to hand to any new doctor."],
+    6:  ["Current medications", "Every prescription, over-the-counter drug and supplement, with dose, purpose and prescriber."],
+    7:  ["Daily medication schedule and refills", "What is due at each time of day, how many pills are left and when to reorder."],
+    8:  ["Care team contacts", "Doctors, specialists, pharmacy and services in one table, with a tip on patient portals."],
+    9:  ["Insurance and benefits", "Plan details by last four digits, plus a list of benefits worth looking into."],
+    10: ["Legal documents checklist", "Which documents exist, who holds copies and where the originals are kept."],
+    11: ["Finances overview", "Accounts and monthly bills at a glance, without writing down full numbers."],
+    12: ["Home and household information", "What a stand-in needs to know, even for a day: utilities, shut-offs, neighbors and pets."],
+    13: ["Home safety checklist", "A room-by-room walkthrough covering falls, fire, medication safety and emergencies."],
+    14: ["Daily care routine", "How a normal day goes, so any helper can keep it familiar."],
+    15: ["Weekly care coverage", "A shift grid showing who covers which part of the week, with a backup on call."],
+    16: ["Family and care team roles", "Who handles what, agreed in writing before resentment builds."],
+    17: ["Family meeting planner", "An agenda, a decisions table and tips for keeping the conversation on track."],
+    18: ["Appointment prep sheet", "Concerns, questions and a bring-list for each visit. A second copy is included."],
+    20: ["Appointment log", "A running history of every visit and what was decided."],
+    21: ["Weekly health log", "Blood pressure, sleep, appetite, mood and pain by day. A second copy is included."],
+    23: ["Incident and concern log", "Falls, confusion and ER visits, written down while fresh so patterns show."],
+    24: ["Hospital stay toolkit", "A packing list and admission questions, with space for daily updates from the care team."],
+    25: ["Hospital discharge planner", "The questions to answer before leaving, and a plan for the first week at home."],
+    26: ["What matters most", "A conversation guide for talking about wishes when things are calm."],
+    27: ["Caregiver&rsquo;s weekly check-in", "A weekly page for you, with burnout signs to watch for and a respite plan."],
+    28: ["Helpful resources", "US helplines and websites, questions for hiring in-home help, and space for local numbers."]
+  };
+  var CHAPTERS = [
+    ["Start here", [1, 2]],
+    ["Emergency and identity", [3, 4]],
+    ["Medical", [5, 6, 7]],
+    ["People and paperwork", [8, 9, 10, 11]],
+    ["The home", [12, 13]],
+    ["Daily care and family", [14, 15, 16, 17]],
+    ["Appointments and tracking", [18, 20, 21, 23]],
+    ["Hospital stays", [24, 25]],
+    ["Wishes and support", [26, 27, 28]]
+  ];
+  var LANDSCAPE = { 6: 1, 7: 1, 15: 1, 21: 1, 22: 1 };
+
+  var ORDER = [];
+  CHAPTERS.forEach(function (c) { ORDER = ORDER.concat(c[1]); });
+
+  var chaptersEl = document.getElementById("chapters");
+  var thumbsEl = document.getElementById("thumbs");
+  var stage = document.getElementById("stage");
+  var img = document.getElementById("stageImg");
+  var capTitle = document.getElementById("capTitle");
+  var capDesc = document.getElementById("capDesc");
+  var idx = 0;
+  var swapTimer;
+
+  function pad(n) { return (n < 10 ? "0" : "") + n; }
+  function plain(s) { var d = document.createElement("div"); d.innerHTML = s; return d.textContent; }
+  function chapterOf(n) {
+    for (var i = 0; i < CHAPTERS.length; i++) { if (CHAPTERS[i][1].indexOf(n) > -1) return i; }
+    return 0;
+  }
+
+  /* Build chapter buttons */
+  CHAPTERS.forEach(function (c, i) {
+    var first = c[1][0], last = c[1][c[1].length - 1];
+    var b = document.createElement("button");
+    b.type = "button";
+    b.className = "chapter";
+    b.innerHTML = "<b>" + c[0] + "</b><small>" + (first === last ? "Page " + first : "Pages " + first + " to " + last) + "</small>";
+    b.addEventListener("click", function () { show(ORDER.indexOf(c[1][0]), true); });
+    chaptersEl.appendChild(b);
+  });
+
+  function buildThumbs(ci) {
+    thumbsEl.innerHTML = "";
+    CHAPTERS[ci][1].forEach(function (n) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "thumb";
+      b.setAttribute("aria-label", "Page " + n + ": " + plain(PAGES[n][0]));
+      b.dataset.page = n;
+      var t = new Image();
+      t.src = "assets/thumbs/p" + pad(n) + ".webp";
+      t.alt = "";
+      t.loading = "lazy";
+      t.decoding = "async";
+      b.appendChild(t);
+      b.addEventListener("click", function () { show(ORDER.indexOf(n), true); });
+      thumbsEl.appendChild(b);
+    });
+  }
+
+  var currentChapter = -1;
+
+  function show(i, animate) {
+    if (i < 0) i = ORDER.length - 1;
+    if (i >= ORDER.length) i = 0;
+    idx = i;
+    var n = ORDER[i];
+    var ci = chapterOf(n);
+
+    if (ci !== currentChapter) {
+      currentChapter = ci;
+      buildThumbs(ci);
+      Array.prototype.forEach.call(chaptersEl.children, function (el, k) {
+        if (k === ci) { el.setAttribute("aria-current", "true"); } else { el.removeAttribute("aria-current"); }
+      });
+      /* keep the active chapter chip visible on small screens */
+      var active = chaptersEl.children[ci];
+      if (active && chaptersEl.scrollWidth > chaptersEl.clientWidth) {
+        chaptersEl.scrollTo({ left: active.offsetLeft - 16, behavior: "smooth" });
+      }
+    }
+    Array.prototype.forEach.call(thumbsEl.children, function (el) {
+      if (Number(el.dataset.page) === n) { el.setAttribute("aria-current", "true"); } else { el.removeAttribute("aria-current"); }
+    });
+
+    var src = "assets/pages/p" + pad(n) + ".webp";
+    var alt = "Binder page " + n + ": " + plain(PAGES[n][0]);
+    var land = !!LANDSCAPE[n];
+
+    function apply() {
+      img.width = land ? 1521 : 1075;
+      img.height = land ? 1075 : 1521;
+      img.alt = alt;
+      img.src = src;
+    }
+
+    clearTimeout(swapTimer);
+    if (animate) {
+      img.classList.add("swap");
+      swapTimer = setTimeout(apply, 150);
+      img.onload = function () { img.classList.remove("swap"); };
+    } else {
+      apply();
+    }
+
+    capTitle.innerHTML = "<span>Page " + n + "</span>" + PAGES[n][0];
+    capDesc.innerHTML = PAGES[n][1];
+
+    /* warm the cache for neighbours */
+    [ORDER[(i + 1) % ORDER.length], ORDER[(i - 1 + ORDER.length) % ORDER.length]].forEach(function (p) {
+      new Image().src = "assets/pages/p" + pad(p) + ".webp";
+    });
+  }
+
+  document.getElementById("prev").addEventListener("click", function () { show(idx - 1, true); });
+  document.getElementById("next").addEventListener("click", function () { show(idx + 1, true); });
+  stage.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowLeft") { e.preventDefault(); show(idx - 1, true); }
+    if (e.key === "ArrowRight") { e.preventDefault(); show(idx + 1, true); }
+  });
+  show(0, false);
+
+  /* Hero pointer parallax (fine pointers only, motion allowed) */
+  var fan = document.getElementById("fan");
+  var hero = fan.closest(".hero");
+  var canMove = window.matchMedia("(hover: hover) and (pointer: fine)").matches &&
+                !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (canMove) {
+    var raf = 0;
+    hero.addEventListener("pointermove", function (e) {
+      if (raf) return;
+      raf = requestAnimationFrame(function () {
+        var r = hero.getBoundingClientRect();
+        fan.style.setProperty("--mx", (((e.clientX - r.left) / r.width) * 2 - 1).toFixed(3));
+        fan.style.setProperty("--my", (((e.clientY - r.top) / r.height) * 2 - 1).toFixed(3));
+        raf = 0;
+      });
+    });
+    hero.addEventListener("pointerleave", function () {
+      fan.style.setProperty("--mx", 0);
+      fan.style.setProperty("--my", 0);
+    });
+  }
+})();
+</script>
+</body>
+</html>
