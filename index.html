@@ -176,6 +176,8 @@ h3{font-size:1.35rem;line-height:1.25}
 .footer-grid{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(32px,6vw,96px)}
 .site-footer .brand{margin-bottom:14px}
 .site-footer p+p{margin-top:12px}
+.foot-link{color:#dbe6ec;text-underline-offset:4px}
+.foot-link:hover{color:#fff}
 
 /* Responsive */
 @media (max-width:960px){
@@ -395,7 +397,7 @@ h3{font-size:1.35rem;line-height:1.25}
             <a class="btn" href="#buy" data-buy="letter">Buy the US Letter edition</a>
           </article>
         </div>
-        <p class="checkout-note">Secure checkout by Creem. You download your PDF after purchase.</p>
+        <p class="checkout-note">Secure checkout by Creem. You download your PDF after purchase. See our <a class="link" href="terms.html#refunds">refund policy</a>. Questions? <a class="link" href="mailto:support@YOURDOMAIN">support@YOURDOMAIN</a></p>
       </div>
     </div>
   </section>
@@ -439,6 +441,8 @@ h3{font-size:1.35rem;line-height:1.25}
         <span>Caregiver Printables</span>
       </a>
       <p>&copy; 2026 Caregiver Printables</p>
+      <p>Support: <a class="foot-link" href="mailto:support@YOURDOMAIN">support@YOURDOMAIN</a></p>
+      <p class="foot-nav"><a class="foot-link" href="terms.html">Terms of Service</a> &nbsp;&middot;&nbsp; <a class="foot-link" href="privacy.html">Privacy Policy</a></p>
     </div>
     <div>
       <p>The binder is an organizational tool. It is not medical, legal, financial or insurance advice and does not replace professional guidance. Laws and benefits vary by location.</p>
@@ -450,11 +454,11 @@ h3{font-size:1.35rem;line-height:1.25}
 <script>
 /* ---------------------------------------------------------------
    STORE SETTINGS: paste your Creem checkout links and prices here.
-   Leave a price empty ("") to hide it.
+   Prices must be shown (Creem requires it), e.g. "$12.00".
 ---------------------------------------------------------------- */
 const STORE = {
-  a4:     { url: "https://www.creem.io/payment/prod_5bIxN5cGFmxOw00bXDr00m", price: "$5.99" },
-  letter: { url: "https://www.creem.io/payment/prod_g0LOdkJDJ9IxFi2JvBth0", price: "$5.99" }
+  a4:     { url: "", price: "$XX.XX" },
+  letter: { url: "", price: "$XX.XX" }
 };
 
 (function () {
