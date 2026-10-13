@@ -75,7 +75,7 @@ body{margin:0;font-family:var(--sans);font-size:1.0625rem;line-height:1.65;color
 img{max-width:100%;display:block}
 h1,h2,h3,p,ul,ol{margin:0}
 ul,ol{padding:0;list-style:none}
-section[id]{scroll-margin-top:var(--header-h)}
+section[id]{scroll-margin-top:calc(var(--header-h) + 28px - clamp(72px,9vw,120px))}
 :focus-visible{outline:3px solid var(--amber);outline-offset:3px}
 .wrap{width:min(1160px,100% - 48px);margin-inline:auto}
 .sec{padding:clamp(72px,9vw,120px) 0}
