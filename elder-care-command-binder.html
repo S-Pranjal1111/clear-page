@@ -20,6 +20,118 @@
 <meta name="twitter:title" content="The Elder Care Command Binder">
 <meta name="twitter:description" content="Everything about their care, in one printable binder. 31 pages, A4 and US Letter.">
 <meta name="twitter:image" content="https://clearpage.online/assets/og-image.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Product",
+      "name": "The Elder Care Command Binder",
+      "description": "A 31-page printable organizer for medications, appointments, contacts, legal papers and daily care. Instant PDF download in A4 or US Letter.",
+      "image": [
+        "https://clearpage.online/assets/cover-a4.webp",
+        "https://clearpage.online/assets/cover-letter.webp"
+      ],
+      "brand": {
+        "@type": "Brand",
+        "name": "ClearPage"
+      },
+      "category": "Printable organizers",
+      "url": "https://clearpage.online/elder-care-command-binder",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "A4 edition (210 × 297 mm)",
+          "price": "5.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://clearpage.online/elder-care-command-binder#buy"
+        },
+        {
+          "@type": "Offer",
+          "name": "US Letter edition (8.5 × 11 in)",
+          "price": "5.99",
+          "priceCurrency": "USD",
+          "availability": "https://schema.org/InStock",
+          "url": "https://clearpage.online/elder-care-command-binder#buy"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Which paper size should I choose?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Choose the size your printer uses. A4 (210 × 297 mm) is standard across Europe, Asia, Africa and Oceania. US Letter (8.5 × 11 in) is standard in the United States and Canada. The content is identical."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What exactly do I receive?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "One PDF of 31 pages in the size you choose. Print it at home or at a copy shop, and print extra copies of any page whenever you need them."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I type into the PDF?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It is designed to be filled in by hand, ideally in pencil so entries are easy to update. The pages are not fillable forms, but you can print a fresh copy of any page when one fills up."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does it work outside the United States?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nearly every page does: medications, contacts, appointments, daily care, home and family pages work anywhere. The insurance pages, the legal checklist and the Helpful Resources page mention US programs and helplines such as Medicare and the Eldercare Locator, and leave space for your own local numbers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it useful if my parent has dementia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It includes prompts for it: notes for emergency responders on memory and communication, a wandering and memory section in the home safety checklist, and a reminder to tell hospital staff about dementia and delirium risk. It is an organizer, not a care program."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What if I order the wrong paper size?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If you have not printed it yet, email support within 7 days of purchase and we will swap it for the other edition at no charge. See the refund policy for the full details."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://clearpage.online/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "The Elder Care Command Binder",
+          "item": "https://clearpage.online/elder-care-command-binder"
+        }
+      ]
+    }
+  ]
+}
+</script>
+
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -173,7 +285,7 @@ h3{font-size:1.35rem;line-height:1.25}
 .card .size{font-weight:500;color:var(--teal);font-size:.95rem;margin-top:6px}
 .card .for{color:var(--muted);font-size:.95rem;margin-top:12px;flex:1}
 .price{font-family:var(--serif);font-weight:600;font-size:2.1rem;letter-spacing:-.02em;color:var(--ink);margin-top:22px;line-height:1}
-.card .btn{margin-top:22px;width:100%}
+.card .btn{margin-top:22px;width:100%;padding:0 14px;text-align:center;line-height:1.25}
 .checkout-note{margin-top:28px;text-align:center;font-size:.9rem;color:#b9cbd6}
 
 /* FAQ */
@@ -221,6 +333,30 @@ h3{font-size:1.35rem;line-height:1.25}
   .why-icon .icon{width:22px;height:22px}
   .faq details p{padding-right:0}
 }
+/* Who it's for, guides, assurance row, sticky bar */
+.who{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.who li{background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px 28px}
+.who h3{font-size:1.25rem}
+.who p{color:var(--muted);margin-top:10px;font-size:1rem}
+.assure{margin:22px auto 0;display:grid;gap:10px;max-width:520px;font-size:.92rem;color:#dbe6ec}
+.assure li{display:flex;gap:12px;align-items:flex-start}
+.assure .icon{color:var(--teal-glow);margin-top:3px}
+.link-dark{color:var(--teal-deep);text-underline-offset:3px}
+.guide-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.guide-links a{display:block;background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;text-decoration:none;color:var(--ink);font-weight:500;line-height:1.4;transition:transform .2s,box-shadow .2s,border-color .2s}
+.guide-links a:hover{transform:translateY(-3px);border-color:var(--teal);box-shadow:0 18px 30px -22px rgba(22,44,60,.5)}
+.guide-links small{display:block;margin-top:8px;color:var(--teal);font-weight:500;font-size:.8rem}
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px calc(12px + env(safe-area-inset-bottom));background:rgba(22,44,60,.96);color:#fff;border-top:1px solid rgba(255,255,255,.12);visibility:hidden;transform:translateY(110%);transition:transform .3s,visibility .3s}
+.sticky-cta.show{visibility:visible;transform:none}
+.sticky-cta span{font-size:.85rem;line-height:1.3;min-width:0}
+.sticky-cta b{display:block;font-weight:500}
+.sticky-cta .btn{flex:none;white-space:nowrap}
+@media (max-width:960px){
+  .who{grid-template-columns:1fr}
+  .sticky-cta{display:flex}
+  .site-footer{padding-bottom:96px}
+}
+@media (prefers-reduced-motion:reduce){.guide-links a,.sticky-cta{transition:none}}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .sheet{animation:none}
@@ -253,6 +389,7 @@ h3{font-size:1.35rem;line-height:1.25}
         <a href="#inside">Look inside</a>
         <a href="#setup">How it works</a>
         <a href="#faq">Questions</a>
+        <a href="/guides/">Guides</a>
       </div>
       <a class="btn btn-sm" href="#buy">Get the binder</a>
     </nav>
@@ -379,6 +516,30 @@ h3{font-size:1.35rem;line-height:1.25}
     </div>
   </section>
 
+  <!-- Who it's for -->
+  <section class="sec sec-mist" id="who">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Who it&rsquo;s for</h2>
+        <p class="lede">Anyone who is keeping track of another person&rsquo;s care, usually on top of everything else.</p>
+      </div>
+      <ul class="who">
+        <li>
+          <h3>Adult children coordinating care</h3>
+          <p>You are juggling work, your own family and a parent&rsquo;s appointments. The binder keeps what you learn in one place, so you are not starting from scratch at every phone call.</p>
+        </li>
+        <li>
+          <h3>A spouse or partner</h3>
+          <p>You know the routines by heart, but someone else may need to step in one day. The binder writes it all down so that they can.</p>
+        </li>
+        <li>
+          <h3>Siblings sharing the load</h3>
+          <p>Family roles, weekly coverage and a meeting planner help you divide the work fairly and keep everyone on the same page.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
   <!-- Buy -->
   <section class="sec sec-dark buy" id="buy">
     <div class="wrap buy-grid">
@@ -414,6 +575,28 @@ h3{font-size:1.35rem;line-height:1.25}
           </article>
         </div>
         <p class="checkout-note">Secure checkout by Creem. You download your PDF after purchase. See our <a class="link" href="/terms#refunds">refund policy</a>. Questions? <a class="link" href="mailto:support@clearpage.online">support@clearpage.online</a></p>
+        <ul class="assure" aria-label="What to expect">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Instant PDF download after checkout</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Ordered the wrong size? Swap it free within 7 days if you have not printed it</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Print as many copies as you need for your own family</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Guides -->
+  <section class="sec sec-mist" id="guides">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Free caregiver guides</h2>
+        <p class="lede">Not ready to buy? These guides explain the thinking behind the binder and are free to read.</p>
+      </div>
+      <div class="guide-links">
+        <a href="/caregiver-binder-what-to-include/">What to put in a caregiver binder<small>Getting organized</small></a>
+        <a href="/emergency-information-sheet/">Emergency information sheet for an elderly parent<small>Emergencies</small></a>
+        <a href="/medication-list-for-elderly-parent/">How to make a medication list<small>Medications</small></a>
+        <a href="/questions-to-ask-your-parents-doctor/">Questions to ask your parent&rsquo;s doctor<small>Appointments</small></a>
+        <a href="/hospital-discharge-checklist/">Hospital discharge checklist<small>Hospital stays</small></a>
       </div>
     </div>
   </section>
@@ -440,6 +623,10 @@ h3{font-size:1.35rem;line-height:1.25}
           <p>Nearly every page does: medications, contacts, appointments, daily care, home and family pages work anywhere. The insurance pages, the legal checklist and the Helpful Resources page mention US programs and helplines such as Medicare and the Eldercare Locator, and leave space for your own local numbers.</p>
         </details>
         <details>
+          <summary>What if I order the wrong paper size?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+          <p>If you have not printed it yet, email <a class="link-dark" href="mailto:support@clearpage.online">support@clearpage.online</a> within 7 days of purchase and we will swap it for the other edition at no charge. See the <a class="link-dark" href="/terms#refunds">refund policy</a> for the full details.</p>
+        </details>
+        <details>
           <summary>Is it useful if my parent has dementia?<svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></summary>
           <p>It includes prompts for it: notes for emergency responders on memory and communication, a wandering and memory section in the home safety checklist, and a reminder to tell hospital staff about dementia and delirium risk. It is an organizer, not a care program.</p>
         </details>
@@ -458,7 +645,7 @@ h3{font-size:1.35rem;line-height:1.25}
       </a>
       <p>&copy; 2026 ClearPage</p>
       <p>Support: <a class="foot-link" href="mailto:support@clearpage.online">support@clearpage.online</a></p>
-      <p class="foot-nav"><a class="foot-link" href="/terms">Terms of Service</a> &nbsp;&middot;&nbsp; <a class="foot-link" href="/privacy">Privacy Policy</a> &nbsp;&middot;&nbsp; <a class="foot-link" href="/emergency-information-sheet/">Emergency Information Sheet Guide</a></p>
+      <p class="foot-nav"><a class="foot-link" href="/guides/">Guides</a> &nbsp;&middot;&nbsp; <a class="foot-link" href="/terms">Terms of Service</a> &nbsp;&middot;&nbsp; <a class="foot-link" href="/privacy">Privacy Policy</a></p>
     </div>
     <div>
       <p>The binder is an organizational tool. It is not medical, legal, financial or insurance advice and does not replace professional guidance. Laws and benefits vary by location.</p>
@@ -664,6 +851,23 @@ const STORE = {
       fan.style.setProperty("--my", 0);
     });
   }
+})();
+</script>
+<div class="sticky-cta" id="stickyCta">
+  <span><b>The Elder Care Command Binder</b>$5.99 &middot; Instant PDF</span>
+  <a class="btn btn-sm" href="#buy">Get the binder</a>
+</div>
+
+<script>
+(function () {
+  var bar = document.getElementById("stickyCta");
+  var hero = document.querySelector(".hero");
+  var buy = document.getElementById("buy");
+  if (!bar || !hero || !buy || !("IntersectionObserver" in window)) return;
+  var heroSeen = true, buySeen = false;
+  function update() { bar.classList.toggle("show", !heroSeen && !buySeen); }
+  new IntersectionObserver(function (e) { heroSeen = e[0].isIntersecting; update(); }).observe(hero);
+  new IntersectionObserver(function (e) { buySeen = e[0].isIntersecting; update(); }).observe(buy);
 })();
 </script>
 </body>

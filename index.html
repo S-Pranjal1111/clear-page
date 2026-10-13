@@ -20,6 +20,37 @@
 <meta name="twitter:title" content="ClearPage | Clear, printable guides for real-life problems">
 <meta name="twitter:description" content="Practical printable PDF guides and organizers. Instant download, print and use today.">
 <meta name="twitter:image" content="https://clearpage.online/assets/og-home.png">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://clearpage.online/#org",
+      "name": "ClearPage",
+      "url": "https://clearpage.online/",
+      "logo": "https://clearpage.online/apple-touch-icon.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@clearpage.online"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://clearpage.online/#site",
+      "name": "ClearPage",
+      "url": "https://clearpage.online/",
+      "description": "Clear, printable guides and organizers for real-life problems.",
+      "publisher": {
+        "@id": "https://clearpage.online/#org"
+      }
+    }
+  ]
+}
+</script>
+
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -146,7 +177,12 @@ a{color:inherit}
   .brand span{display:none}
   .faq details p{padding-right:0}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.pcard{transition:none}}
+.guide-links{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:18px}
+.guide-links a{display:block;background:#fff;border:1px solid var(--line);border-radius:18px;padding:22px;text-decoration:none;color:var(--ink);font-weight:500;line-height:1.4;transition:transform .2s,box-shadow .2s,border-color .2s}
+.guide-links a:hover{transform:translateY(-3px);border-color:var(--teal);box-shadow:0 18px 30px -22px rgba(22,44,60,.5)}
+.guide-links small{display:block;margin-top:8px;color:var(--teal);font-weight:500;font-size:.8rem}
+.more-link{display:inline-block;margin-top:28px;font-weight:600;color:var(--ink)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.pcard,.guide-links a{transition:none}}
 </style>
 </head>
 
@@ -163,6 +199,7 @@ a{color:inherit}
         <a href="#products">Our products</a>
         <a href="#how">How it works</a>
         <a href="#faq">Questions</a>
+        <a href="/guides/">Guides</a>
       </div>
       <a class="btn btn-sm" href="#products">Browse guides</a>
     </nav>
@@ -216,6 +253,24 @@ a{color:inherit}
           <a class="btn btn-sm" href="mailto:support@clearpage.online?subject=Guide%20request">Suggest a guide</a>
         </article>
       </div>
+    </div>
+  </section>
+
+  <!-- Guides -->
+  <section class="sec" id="guides">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2>Free caregiver guides</h2>
+        <p class="lede">Practical reading for people looking after an elderly parent, with checklists you can use today.</p>
+      </div>
+      <div class="guide-links">
+        <a href="/caregiver-binder-what-to-include/">What to put in a caregiver binder<small>Getting organized</small></a>
+        <a href="/emergency-information-sheet/">Emergency information sheet for an elderly parent<small>Emergencies</small></a>
+        <a href="/medication-list-for-elderly-parent/">How to make a medication list<small>Medications</small></a>
+        <a href="/questions-to-ask-your-parents-doctor/">Questions to ask your parent&rsquo;s doctor<small>Appointments</small></a>
+        <a href="/hospital-discharge-checklist/">Hospital discharge checklist<small>Hospital stays</small></a>
+      </div>
+      <a class="more-link" href="/guides/">See all guides &rarr;</a>
     </div>
   </section>
 
@@ -282,7 +337,7 @@ a{color:inherit}
       </a>
       <p>&copy; 2026 ClearPage</p>
       <p>Support: <a class="foot-link" href="mailto:support@clearpage.online">support@clearpage.online</a></p>
-      <p><a class="foot-link" href="/terms">Terms of Service</a> &nbsp;&middot;&nbsp; <a class="foot-link" href="/privacy">Privacy Policy</a> &nbsp;&middot;&nbsp; <a class="foot-link" href="/emergency-information-sheet/">Emergency Information Sheet Guide</a></p>
+      <p><a class="foot-link" href="/guides/">Guides</a> &nbsp;&middot;&nbsp; <a class="foot-link" href="/terms">Terms of Service</a> &nbsp;&middot;&nbsp; <a class="foot-link" href="/privacy">Privacy Policy</a></p>
     </div>
     <div>
       <p>ClearPage guides are organizational and informational tools. They are not medical, legal, financial or insurance advice and do not replace professional guidance. Laws and benefits vary by location.</p>

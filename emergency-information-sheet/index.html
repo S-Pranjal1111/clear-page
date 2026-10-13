@@ -35,6 +35,29 @@
       "publisher": { "@type": "Organization", "name": "ClearPage", "url": "https://clearpage.online/" }
     },
     {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+                {
+                      "@type": "ListItem",
+                      "position": 1,
+                      "name": "Home",
+                      "item": "https://clearpage.online/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 2,
+                      "name": "Guides",
+                      "item": "https://clearpage.online/guides/"
+                },
+                {
+                      "@type": "ListItem",
+                      "position": 3,
+                      "name": "Emergency information sheet",
+                      "item": "https://clearpage.online/emergency-information-sheet/"
+                }
+          ]
+    },
+    {
       "@type": "FAQPage",
       "mainEntity": [
         {
@@ -75,132 +98,32 @@
 }
 </script>
 
-<style>
-  :root {
-    --ink: #1e3a4f;
-    --text: #22303a;
-    --muted: #5a6b77;
-    --tint: #eef3f6;
-    --line: #d5dfe6;
-    --alert: #b3261e;
-    --bg: #ffffff;
-  }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body {
-    margin: 0;
-    background: var(--bg);
-    color: var(--text);
-    font: 18px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    -webkit-text-size-adjust: 100%;
-  }
-  a { color: var(--ink); text-underline-offset: 3px; }
-  a:hover { color: #0f2535; }
-  a:focus-visible, summary:focus-visible { outline: 3px solid #3a86b8; outline-offset: 3px; border-radius: 3px; }
-
-  .site-header { border-bottom: 1px solid var(--line); }
-  .site-header .inner {
-    max-width: 960px; margin: 0 auto; padding: 16px 20px;
-    display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
-  }
-  .brand { font: 700 1.25rem Georgia, "Times New Roman", serif; color: var(--ink); text-decoration: none; }
-  .site-header nav a { margin-left: 20px; font-size: 0.95rem; text-decoration: none; color: var(--muted); }
-  .site-header nav a:hover { color: var(--ink); text-decoration: underline; }
-  .site-header nav a.buy {
-    background: var(--ink); color: #fff; padding: 8px 16px; border-radius: 6px; font-weight: 600;
-  }
-  .site-header nav a.buy:hover { background: #0f2535; color: #fff; text-decoration: none; }
-
-  main { max-width: 720px; margin: 0 auto; padding: 40px 20px 72px; }
-  .crumbs { font-size: 0.9rem; color: var(--muted); margin-bottom: 20px; }
-  .crumbs a { color: var(--muted); }
-
-  h1 {
-    font: 700 clamp(2rem, 5vw, 2.75rem)/1.15 Georgia, "Times New Roman", serif;
-    color: var(--ink); margin: 0 0 16px; letter-spacing: -0.01em;
-  }
-  h2 {
-    font: 700 1.6rem/1.25 Georgia, "Times New Roman", serif;
-    color: var(--ink); margin: 52px 0 12px;
-  }
-  h3 { font-size: 1.1rem; margin: 28px 0 6px; color: var(--ink); }
-  p { margin: 0 0 16px; }
-  .lede { font-size: 1.2rem; color: #33444f; }
-  .meta { font-size: 0.9rem; color: var(--muted); margin-bottom: 28px; }
-
-  figure { margin: 32px 0; }
-  figure img {
-    display: block; width: 100%; max-width: 420px; height: auto; margin: 0 auto;
-    border: 1px solid var(--line); border-radius: 4px; box-shadow: 0 2px 10px rgba(30,58,79,0.12);
-  }
-  figcaption { font-size: 0.9rem; color: var(--muted); text-align: center; margin-top: 10px; }
-
-  .toc { background: var(--tint); border-radius: 8px; padding: 18px 24px; margin: 28px 0; }
-  .toc strong { display: block; margin-bottom: 6px; color: var(--ink); }
-  .toc ol { margin: 0; padding-left: 20px; }
-  .toc li { margin: 4px 0; }
-
-  ul.check { list-style: none; padding: 0; margin: 0 0 16px; }
-  ul.check li { position: relative; padding-left: 34px; margin: 10px 0; }
-  ul.check li::before {
-    content: ""; position: absolute; left: 0; top: 0.32em;
-    width: 18px; height: 18px; border: 2px solid var(--ink); border-radius: 3px; background: #fff;
-  }
-  ul.check.avoid li::before { border-color: var(--alert); }
-  ul.check.avoid li::after {
-    content: "×"; position: absolute; left: 4px; top: 0.12em; color: var(--alert); font-weight: 700; font-size: 1.1rem;
-  }
-
-  .note {
-    border-left: 4px solid var(--alert); background: #fdf3f2; padding: 14px 18px; margin: 24px 0; border-radius: 0 6px 6px 0;
-  }
-  .note p:last-child { margin-bottom: 0; }
-
-  .cta {
-    background: var(--ink); color: #eaf1f5; border-radius: 10px; padding: 32px 28px; margin: 56px 0 0;
-  }
-  .cta h2 { color: #fff; margin: 0 0 10px; font-size: 1.45rem; }
-  .cta p { margin-bottom: 18px; }
-  .cta a.button {
-    display: inline-block; background: #fff; color: var(--ink); font-weight: 700;
-    padding: 12px 22px; border-radius: 6px; text-decoration: none;
-  }
-  .cta a.button:hover { background: #dfe9ef; }
-  .cta a.secondary { color: #cfe0ea; margin-left: 16px; }
-
-  details { border-bottom: 1px solid var(--line); padding: 14px 0; }
-  details:first-of-type { border-top: 1px solid var(--line); }
-  summary { cursor: pointer; font-weight: 600; color: var(--ink); }
-  details p { margin: 10px 0 0; }
-
-  .disclaimer { font-size: 0.88rem; color: var(--muted); margin-top: 40px; }
-
-  footer { border-top: 1px solid var(--line); padding: 28px 20px 40px; text-align: center; font-size: 0.9rem; color: var(--muted); }
-  footer a { color: var(--muted); }
-
-  @media print {
-    .site-header, .cta, .crumbs, footer, .toc { display: none; }
-    body { font-size: 12pt; }
-    main { padding: 0; }
-  }
-  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/guide.css">
 </head>
 <body>
 
 <header class="site-header">
-  <div class="inner">
-    <a class="brand" href="/">ClearPage</a>
-    <nav aria-label="Main">
-      <a href="/elder-care-command-binder#inside">Look inside</a>
-      <a href="/elder-care-command-binder#faq">Questions</a>
-      <a class="buy" href="/elder-care-command-binder#buy">Get the binder</a>
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="ClearPage home">
+      <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#2f8186"/><circle cx="38" cy="26" r="16" fill="#1e3a4f"/><rect x="12" y="44" width="24" height="5" rx="2.5" fill="#e0a24a"/></svg>
+      <span>ClearPage</span>
+    </a>
+    <nav class="nav" aria-label="Main">
+      <div class="nav-links">
+        <a href="/guides/">Guides</a>
+        <a href="/elder-care-command-binder">The binder</a>
+        <a href="/elder-care-command-binder#faq">Questions</a>
+      </div>
+      <a class="btn btn-sm" href="/elder-care-command-binder#buy">Get the binder</a>
     </nav>
   </div>
 </header>
 
 <main>
-  <p class="crumbs"><a href="/">Home</a> / Caregiver guides</p>
+  <p class="crumbs"><a href="/">Home</a> / <a href="/guides/">Guides</a> / Emergency information sheet</p>
 
   <article>
     <h1>Emergency information sheet for an elderly parent: what to include</h1>
@@ -329,10 +252,11 @@
     <aside class="cta" aria-labelledby="cta-heading">
       <h2 id="cta-heading">Want this, and everything else, already laid out?</h2>
       <p>The Elder Care Command Binder is a 31-page printable organizer. Its Emergency Sheet is ready to fill in and put on the fridge, and the rest covers medications, appointments, contacts, legal papers and shared family care. Download the PDF in A4 or US Letter and print as many copies as you need.</p>
-      <p>
-        <a class="button" href="/elder-care-command-binder#buy">Get the binder, $5.99</a>
+      <p class="row">
+        <a class="btn" href="/elder-care-command-binder#buy">Get the binder, $5.99</a>
         <a class="secondary" href="/elder-care-command-binder#inside">Look inside first</a>
       </p>
+      <p class="fine">Instant PDF download. Secure checkout by Creem.</p>
     </aside>
 
     <h2 id="faq">Common questions</h2>
@@ -357,13 +281,36 @@
       <p>Add a short note about memory and communication: whether they may not recognize you, may be confused or frightened, may not answer questions reliably, or may wander. This helps responders and hospital staff approach them calmly.</p>
     </details>
 
+    <section class="related" aria-labelledby="related-heading">
+      <h2 id="related-heading">More caregiver guides</h2>
+      <div class="related-grid">
+      <a href="/caregiver-binder-what-to-include/">What to put in a caregiver binder<small>Getting organized</small></a>
+      <a href="/medication-list-for-elderly-parent/">How to make a medication list<small>Medications</small></a>
+      <a href="/questions-to-ask-your-parents-doctor/">Questions to ask your parent&#x27;s doctor<small>Appointments</small></a>
+      <a href="/hospital-discharge-checklist/">Hospital discharge checklist<small>Hospital stays</small></a>
+      </div>
+    </section>
+
     <p class="disclaimer">This guide is an organizational resource. It is not medical, legal, financial or insurance advice and does not replace professional guidance. Laws and benefits vary by location.</p>
   </article>
 </main>
 
-<footer>
-  <p>© 2026 ClearPage · <a href="/terms.html">Terms of Service</a> · <a href="/privacy.html">Privacy Policy</a></p>
-  <p><a href="mailto:support@clearpage.online">support@clearpage.online</a></p>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <a class="brand" href="/">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#2f8186"/><circle cx="38" cy="26" r="16" fill="#1e3a4f"/><rect x="12" y="44" width="24" height="5" rx="2.5" fill="#e0a24a"/></svg>
+        <span>ClearPage</span>
+      </a>
+      <p>&copy; 2026 ClearPage</p>
+      <p>Support: <a class="foot-link" href="mailto:support@clearpage.online">support@clearpage.online</a></p>
+      <p><a class="foot-link" href="/guides/">Guides</a> &nbsp;&middot;&nbsp; <a class="foot-link" href="/terms">Terms of Service</a> &nbsp;&middot;&nbsp; <a class="foot-link" href="/privacy">Privacy Policy</a></p>
+    </div>
+    <div>
+      <p>ClearPage guides are organizational and informational tools. They are not medical, legal, financial or insurance advice and do not replace professional guidance. Laws and benefits vary by location.</p>
+      <p>Personal, non-commercial use only. You may print copies for your own use. You may not resell, share or redistribute the files.</p>
+    </div>
+  </div>
 </footer>
 
 </body>
