@@ -108,11 +108,14 @@ h2{font-size:clamp(1.8rem,3.4vw,2.6rem)}
         <h1>Free emergency information sheet for an elderly parent.</h1>
         <p class="lede">One printable page with their conditions, allergies, medications, doctors and emergency contacts, so anyone can help fast. Free PDF in US Letter and A4.</p>
 
-        <div class="dl" style="margin-top:30px">
-          <a class="btn" href="/downloads/clearpage-emergency-information-sheet-us-letter.pdf" download>Download US Letter PDF</a>
-          <a class="btn" href="/downloads/clearpage-emergency-information-sheet-a4.pdf" download style="background:transparent;color:#fff;border:2px solid #fff;box-shadow:none">Download A4 PDF</a>
-        </div>
-        <p class="fine">Free. Print as many copies as you need for your own family.</p>
+        <form class="signup" action="PASTE_KIT_FORM_ACTION_URL" method="post">
+  <label for="email">Where should we send it?</label>
+  <div class="row">
+    <input type="email" id="email" name="email_address" placeholder="Your email address" autocomplete="email" required>
+    <button class="btn" type="submit">Send me the free sheet</button>
+  </div>
+  <p class="fine">We&rsquo;ll email you a link to confirm, then your download. Occasional ClearPage updates may follow, and you can unsubscribe anytime. See the <a href="/privacy">Privacy Policy</a>.</p>
+</form>
       </div>
       <div class="hero-art">
         <img src="/assets/free-emergency-sheet-preview.png" width="900" height="1165" alt="Preview of the free ClearPage Emergency Information Sheet, a one-page printable form" fetchpriority="high">
